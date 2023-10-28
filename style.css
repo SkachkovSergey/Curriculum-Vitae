@@ -1,8 +1,12 @@
+*{
+    padding: 0;
+}
 body {
     background-color: cornsilk;
 }
 .grid-container {
     display: grid;
+    grid-template-columns: 1fr  1fr 1fr 1fr;
     grid-template-areas:
       "sidebar header header header"
       "sidebar main main main"
@@ -18,13 +22,36 @@ body {
 }
 .header {
     grid-area: header;
+    min-width: 100px;
 }
 .sidebar {
     grid-area: sidebar;
+
 }
 .main {
     grid-area: main;
 }
 .footer {
     grid-area: footer;
+}
+img{
+    border: solid 1px #4f8cef;
+    border-radius: 5%;
+    width: 80%;
+    height: 80%;
+    margin: 15px;
+    box-shadow: 5px 5px 15px black;
+}
+img:hover{
+    box-shadow: 5px 5px 20px  black;
+    transition: transform 700ms ease-in-out;
+}
+img:active{
+    border: solid 1px blue;
+    box-shadow: 5px 5px 20px black;
+    transform: translateY(-5px);
+}
+#picture {
+    width: 80%;
+    margin: 0 auto;
 }
