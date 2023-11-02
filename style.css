@@ -35,6 +35,22 @@ body {
 }
 .sidebar {
     grid-area: sidebar;
+    color: darkblue;
+}
+.line{
+    border-top: solid 2px #4f8cef;
+}
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+li {
+    list-style-type: none;
+}
+a{
+    color: #968d78;
+    text-decoration: none;
 }
 .main {
     grid-area: main;
