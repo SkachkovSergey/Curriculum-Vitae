@@ -66,6 +66,13 @@ img:active{
 .line{
     border-top: solid 2px #4f8cef;
 }
+.name h1 {
+    font-size: 36px;
+    color: #2c3748;
+}
+.name p {
+    color: #2c3748;
+}
 .links {
     display: flex;
     flex-direction: column;
