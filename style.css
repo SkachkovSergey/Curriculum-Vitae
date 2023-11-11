@@ -44,6 +44,7 @@ div{
 }
 img{
     border: solid 1px #4f8cef;
+    padding: 3px;
     border-radius: 5%;
     width: 80%;
     height: 80%;
@@ -85,16 +86,7 @@ a{
     color: #968d78;
     text-decoration: none;
 }
-.email:hover {
-    transform: scale(1.1);
-}
-.phone:hover {
-    transform: scale(1.1);
-}
-.website:hover {
-    transform: scale(1.1);
-}
-.linkedIn:hover {
+.link-item:hover {
     transform: scale(1.1);
 }
 .main {

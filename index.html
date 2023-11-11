@@ -6,36 +6,38 @@
     <link href="style.css" rel="stylesheet">
     <meta name="viewport" content="width=divice-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/28aae360ac.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
 <body>
-  <div class="grid-container">
+ <div id="app">
+   <div class="grid-container">
       <div role="banner" class="grid-item header">
           <h1>Curriculum Vitae</h1>
       </div>
       <div class="grid-item sidebar">
           <div id="picture">
-              <img src="assets/MyImage.jpg" width="100px"  alt="my image">
+              <img v-bind:src="image" width="100px"  alt="my image">
           </div>
           <div class="line"></div>
           <div class="name">
-              <h1>Sergey</h1>
-              <h1>Skachkov</h1>
-              <p>programmer</p>
+              <h1>{{ firstName }}</h1>
+              <h1>{{ lastName }}</h1>
+              <p>{{ speciality }}</p>
           </div>
           <div class="line"></div>
           <div class="contacts">
               <h1>Contact</h1>
               <ul class="links">
-                  <li class="email">
+                  <li class="link-item">
                       <a href="mailto:SergeySkatchkov@gmail.com"><i class="fa-solid fa-envelope fa-3x"></i></a>
                   </li>
-                  <li class="phone">
+                  <li class="link-item">
                       <a href="tel:0032489552370"><i class="fa-solid fa-phone fa-3x"></i></a>
                   </li>
-                  <li class="website">
+                  <li class="link-item">
                       <a href="https://skachkovsergey.github.io/Portfolio/"><i class="fa-solid fa-earth-europe fa-3x"></i></a>
                   </li>
-                  <li class="linkedIn">
+                  <li class="link-item">
                       <a href="https://www.linkedin.com/in/sergey-skachkov-945b461a2"><i class="fa-brands fa-linkedin fa-3x"></i></a>
                   </li>
               </ul>
@@ -129,6 +131,8 @@
           <h1>Task Curriculum Vitae</h1>
           <h3 class="to-the-top"><a href="#">To the Top</a></h3>
       </div>
-  </div>
+   </div>
+     <script src="script.js"></script>
+ </div>
 </body>
 </html>
