@@ -28,8 +28,8 @@ div{
 }
 .header {
     grid-area: header;
-    min-width: 150px;
-    min-height: 50px;
+    min-width: 15vw;
+    min-height: 5vw;
     color: white;
     font-family: Calibri, sans-serif;
     font-size: 30px;
@@ -42,9 +42,13 @@ div{
     align-items: center;
     padding: 70px;
 }
+.header h1:hover {
+    -webkit-text-stroke: 1px black;
+    -webkit-text-fill-color: #4f8cef;
+}
 .sidebar {
     grid-area: sidebar;
-    color: darkblue;
+    color: #2c3748;
     min-width: 10vw;
     display: flex;
     flex-direction: column;
@@ -53,7 +57,7 @@ img{
     border: solid 1px #4f8cef;
     padding: 3px;
     border-radius: 5%;
-    width: 15vw;
+    width: 14vw;
     height: 20vw;
     margin: 2vw;
     box-shadow: 1px 1px 5px black;
@@ -75,9 +79,9 @@ img:active{
     border-top: solid 2px #4f8cef;
 }
 .name h1 {
-    font-size: 4vw;
+    font-size: 3vw;
     color: #2c3748;
-    padding: 2vw;
+    padding-top: 2vw;
 }
 .name p {
     color: #2c3748;
@@ -85,7 +89,7 @@ img:active{
     font-size: 2vw;
 }
 .contacts h1 {
-    font-size: 3vw;
+    font-size: 2.5vw;
     padding: 2vw;
 }
 .links {
@@ -107,19 +111,19 @@ a{
     transform: scale(1.1);
 }
 .referenties h1 {
-    padding: 2vw;
-    font-size: 3vw;
+    padding: 1vw;
+    font-size: 2.5vw;
 }
 .referenties h3 {
-    font-size: 2vw;
+    font-size: 1.5vw;
     padding: 0.5vw;
 }
 .referenties address {
-    font-size: 2vw;
+    font-size: 1.5vw;
     padding: 0.5vw;
 }
 .referenties p {
-    font-size: 2vw;
+    font-size: 1.5vw;
     padding: 0.5vw;
 }
 .main {
@@ -128,9 +132,9 @@ a{
     flex-direction: column;
 }
 h2{
-    color: #545727;
+    color: #2c3748;
     margin-bottom: 20px;
-    font-size: 36px;
+    font-size: 2.2vw;
 }
 .item {
     margin-bottom: 60px;
@@ -188,5 +192,8 @@ td{
 }
 .to-the-top:hover {
     transform: scale(1.1);
+}
+.to-the-top a {
+    color: #2c3748;
 }
 
