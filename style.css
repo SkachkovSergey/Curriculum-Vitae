@@ -4,8 +4,70 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 body {
-    background-color: cornsilk;
+
     margin-bottom: 0;
+}
+@media screen and (max-width: 560px) {
+    div{
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+      "sidebar header header header"
+      "sidebar main main main"
+      "sidebar main main main"
+      "footer footer footer footer";
+        grid-gap: 0;
+    }
+    .grid-item {
+        background-color: #96BCEF;
+        text-align: center;
+        padding: 20px;
+    }
+    .header {
+        grid-area: header;
+        min-width: 15vw;
+        min-height: 15vw;
+        color: white;
+        font-family: Calibri, sans-serif;
+
+        text-transform: uppercase;
+        text-shadow: 1vw 1vw 0.7vw #2c3748, -1vw -1vw 25vw white;
+        -webkit-text-stroke: 0.1vw black;
+        -webkit-text-fill-color: #16c0b0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 7vw;
+    }
+    .sidebar {
+        min-width: 50px;
+    }
+    .item table {
+        display: none;
+    }
+     tr td {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .item {
+        padding: 10px;
+    }
+
+    .item p {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+}
+@media screen and (max-width: 480px)  {
+    body {
+        color: blue;
+    }
 }
 div{
     padding: 0;
@@ -29,18 +91,18 @@ div{
 .header {
     grid-area: header;
     min-width: 15vw;
-    min-height: 5vw;
+    min-height: 15vw;
     color: white;
     font-family: Calibri, sans-serif;
-    font-size: 30px;
+    font-size: 3vw;
     text-transform: uppercase;
-    text-shadow: 10px 10px 10px #2c3748, -1px -1px 25px white;
-    -webkit-text-stroke: 1px black;
+    text-shadow: 1vw 1vw 0.7vw #2c3748, -1px -1px 25px white;
+    -webkit-text-stroke: 0.1vw black;
     -webkit-text-fill-color: #16c0b0;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 70px;
+    padding: 7vw;
 }
 .header h1:hover {
     -webkit-text-stroke: 1px black;
@@ -178,7 +240,7 @@ td{
 }
 .star {
     color: #555ae6;
-    font-size: 30px;
+    font-size: 3vw;
 }
 .footer {
     grid-area: footer;
