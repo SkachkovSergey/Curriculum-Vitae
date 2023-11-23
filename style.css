@@ -4,67 +4,60 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 body {
-
     margin-bottom: 0;
 }
+.header .name {
+    display: none;
+}
 @media screen and (max-width: 560px) {
-    div{
-        padding: 0;
-        box-sizing: border-box;
-    }
-    .grid-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-areas:
-      "sidebar header header header"
-      "sidebar main main main"
-      "sidebar main main main"
-      "footer footer footer footer";
-        grid-gap: 0;
-    }
-    .grid-item {
-        background-color: #96BCEF;
-        text-align: center;
-        padding: 20px;
-    }
-    .header {
-        grid-area: header;
-        min-width: 15vw;
-        min-height: 15vw;
-        color: white;
-        font-family: Calibri, sans-serif;
-
-        text-transform: uppercase;
-        text-shadow: 1vw 1vw 0.7vw #2c3748, -1vw -1vw 25vw white;
-        -webkit-text-stroke: 0.1vw black;
-        -webkit-text-fill-color: #16c0b0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 7vw;
-    }
-    .sidebar {
-        min-width: 50px;
-    }
     .item table {
         display: none;
     }
-     tr td {
-        display: flex;
-        flex-direction: row;
-
-    }
-
-    .item {
-        padding: 10px;
-    }
-
     .item p {
         font-size: 16px;
         margin-bottom: 10px;
     }
+    .referenties {
+        display: none;
+    }
+    .item .otherTable {
+        display: block;
+    }
+
+    p {
+        font-size: 20px;
+    }
 }
 @media screen and (max-width: 480px)  {
+    #cv {
+        display: none;
+    }
+    .sidebar .name {
+        display: none;
+    }
+    .grid-container .header {
+        padding-bottom: 1vw;
+        text-shadow: 1vw 1vw 15vw white, -1px -1px 25px white;
+        -webkit-text-stroke: 0.1vw #555ae6;
+        -webkit-text-fill-color: #555ae6;
+    }
+    .header .name {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+    }
+    .name h2, p {
+        font-size: 6vw;
+    }
+
+    .grid-item .item h2{
+        display: flex;
+        justify-content: flex-start;
+        font-size: 3.7vw;
+        background-color: #96BCEF;
+    }
+
     body {
         color: blue;
     }
@@ -94,19 +87,19 @@ div{
     min-height: 15vw;
     color: white;
     font-family: Calibri, sans-serif;
-    font-size: 3vw;
+    font-size: 2.3vw;
     text-transform: uppercase;
     text-shadow: 1vw 1vw 0.7vw #2c3748, -1px -1px 25px white;
     -webkit-text-stroke: 0.1vw black;
-    -webkit-text-fill-color: #16c0b0;
+    -webkit-text-fill-color: #4f8cef;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 7vw;
+    padding: 5vw;
 }
 .header h1:hover {
     -webkit-text-stroke: 1px black;
-    -webkit-text-fill-color: #4f8cef;
+    -webkit-text-fill-color: #16c0b0;
 }
 .sidebar {
     grid-area: sidebar;
@@ -114,13 +107,13 @@ div{
     min-width: 10vw;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
 }
 img{
     border: solid 1px #4f8cef;
     padding: 3px;
     border-radius: 5%;
-    width: 14vw;
-    height: 20vw;
+    width: 15vw;
     margin: 2vw;
     box-shadow: 1px 1px 5px black;
 }
@@ -132,10 +125,6 @@ img:active{
     border: solid 1px blue;
     box-shadow: 1px 1px 2px blue;
     transform: translateY(-3px);
-}
-#picture {
-    width: 10vw;
-
 }
 .line{
     border-top: solid 2px #4f8cef;
@@ -195,23 +184,23 @@ a{
 }
 h2{
     color: #2c3748;
-    margin-bottom: 20px;
+    margin-bottom: 2vw;
     font-size: 2.2vw;
 }
 .item {
-    margin-bottom: 60px;
+    margin-bottom: 3vw;
 }
 .item h2{
     background-color: #4f8cef;
-    height: 50px;
-    border-radius: 10px;
+    height: 3.5vw;
+    border-radius: 0.5vw;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 5px;
 }
 .item p {
-    padding-bottom: 10px;
+    padding-bottom: 0.1vw;
 }
 .item {
     display: flex;
@@ -252,10 +241,19 @@ td{
     color: #2c3748;
     margin-bottom: 0;
 }
+.footer h2 {
+    font-size: 3vw;
+}
+.footer h3 {
+    font-size: 2.5vw;
+}
 .to-the-top:hover {
     transform: scale(1.1);
 }
 .to-the-top a {
     color: #2c3748;
+}
+.otherTable {
+    display: none;
 }
 
