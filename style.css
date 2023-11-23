@@ -21,8 +21,14 @@ body {
         font-size: 16px;
         margin-bottom: 10px;
     }
+    .grid-item .item h2{
+        display: flex;
+        justify-content: flex-start;
+        font-size: 3vw;
+
+    }
     .referenties {
-        display: none;
+
     }
     .item .otherTable {
         display: block;
@@ -74,7 +80,12 @@ body {
     .link-image img:hover{
         box-shadow: 0 0 0 white;
     }
-
+    .contacts h2, a {
+        font-size: 3.5vw;
+    }
+    .referenties h2, h3, address, p {
+        font-size: 3.5vw;
+    }
     body {
         color: blue;
     }
