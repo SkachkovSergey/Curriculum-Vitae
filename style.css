@@ -9,6 +9,10 @@ body {
 .header .name {
     display: none;
 }
+
+.sidebar .link-image {
+    display: none;
+}
 @media screen and (max-width: 560px) {
     .item table {
         display: none;
@@ -56,6 +60,19 @@ body {
         justify-content: flex-start;
         font-size: 3.7vw;
         background-color: #96BCEF;
+    }
+    .sidebar .image{
+        display: none;
+    }
+    .sidebar .link-image{
+        display: block;
+    }
+    .link-image img {
+        padding: 0;
+        border-radius: 1vw;
+    }
+    .link-image img:hover{
+        box-shadow: 0 0 0 white;
     }
 
     body {
@@ -108,6 +125,7 @@ div{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    align-items: center;
 }
 img{
     border: solid 1px #4f8cef;
